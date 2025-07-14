@@ -60,7 +60,7 @@ def log_event(eye_closure, reaction_time, confidence, status, alarm):
             df = new_row
         df.to_excel(data_file, index=False)
     except PermissionError:
-        print("❌ Please close the Excel file and try again.")
+        print("Please close the Excel file and try again.")
 
 # EAR calculation
 def eye_aspect_ratio(eye):
